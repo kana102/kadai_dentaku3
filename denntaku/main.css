@@ -1,0 +1,8 @@
+input{
+  box-sizing: border-box;
+  width: 7rem;
+  height: 1.5rem;
+  font-size: 1.2em;
+  text-align: right;
+  padding: 0 0.75rem;
+}
