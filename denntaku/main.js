@@ -29,6 +29,36 @@ function num_click(val){
 }
 
 
+function dot_click(){
+
+  let is_decimal = false;
+  
+  let number = result.value;
+  
+  let number_list = number.split("");
+  
+  for(let i = number_list.length -1; i >= 0; i--){
+    
+    let char = number_list[i];
+    
+    if(["+","-","*","/"].includes(char)){
+      break;
+    }
+    
+    if(char === "."){
+      is_decimal = true;
+    }
+  }
+  
+  
+  if(is_decimal){
+    
+  }else{
+    
+    result.value += ".";
+  }
+}
+
 
 function ope_click(val){
   if(is_calc)  is_calc = false;
